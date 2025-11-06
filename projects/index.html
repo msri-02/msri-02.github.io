@@ -12,18 +12,20 @@
         <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <div class="content-container">
         <header>
         <nav class="navbar">
         <div class="nav-container"> 
             <ul>
                 <li><a href="../index.html">about me</a></li>
                 <li><a href="../projects/">projects</a></li>
-                <li><a href="../calpoly/">cal poly</a></li> 
+                <li><a href="../skills/">skills</a></li> 
             </ul>
         </div>
         </nav>
         </header>
-        <h1>My Projects</h1>
+        <h1>my projects</h1>
+        <section class="project-grid"> 
         <div class="project">
             <h3>Ambient Sync</h3>
             <p>Screen-synced LED lighting system using Python and a webcam.</p>
@@ -32,23 +34,23 @@
         <div class="project">
             <h3>Breathalyzer Lockbox</h3>
             <p>An embedded system based on an alcohol sensor with a goal to prevent drunk driving.</p>
-            <a href="https://github.com/msri-02/ambient_sync" target="_blank">View on GitHub</a>
+            <a href="https://github.com/msri-02/breathalyzer_lockbox" target="_blank">View on GitHub</a>
         </div>
         <div class="project">
             <h3>Digital Multimeter</h3>
-            <p>Digital multimeter using an STM MCU </p>
+            <p>Digital multimeter using an STM32 MCU </p>
             <a href="https://github.com/msri-02/digital_multimeter" target="_blank">View on GitHub</a>
         </div>
         <div class="project">
             <h3>Embedded System Labs</h3>
-            <p>These are smaller labs where I learned different protocols. </p>
+            <p>These are smaller labs where I learned different protocols (SPI, UART, I2C) using an STM32 MCU. </p>
             <a href="https://github.com/msri-02/cpe316" target="_blank">View on GitHub</a>
         </div>
         <div class="project">
-            <h3>Networking Projects</h3>
-            <p> Chat program </p>
-            <a href="https://github.com/msri-02/cpe316" target="_blank">View on GitHub</a>
+            <h3>Chat Program - Networks</h3>
+            <p> As a part of a networking class, I wrote a TCP-based chat program allowing multiple clients to communicate with each other through the command line.</p>
         </div>
+        </section>
         <div id="footer"></div>
         <div id="footer"></div>
         <script>
@@ -58,5 +60,6 @@
               document.getElementById('footer').innerHTML = data;
             });
         </script>
+        </div>
     </body>
 </html>
