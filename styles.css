@@ -85,6 +85,8 @@
   
   /* Project block */
   .project {
+    display: flex;          
+    flex-direction: column; 
     border: 1px solid #fff5f2;
     padding: 20px;
     margin-bottom: 20px;
@@ -99,6 +101,7 @@
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
+    align-items: stretch;
   }
   /* Project titles */
   .project h3 {
@@ -118,8 +121,8 @@
   /* Buttons or link styling in project blocks */
   .project a {
     display: inline-block;
-    margin-right: 10px;
-    margin-top: 10px;
+    /* margin-right: 10px; */
+    margin-top: auto;
     padding: 6px 12px;
     background-color: #064232;
     color: white;
